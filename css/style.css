@@ -53,22 +53,92 @@ body {
   max-width: 1200px;
   margin: auto;
   box-shadow: -1px 5px 13px 4px;
-  height: 1500px;
+  background-color: rgba(0, 0, 0, 0.37);
 }
 .main .guia {
-  float: left;
   width: 900px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
   color: white;
 }
+.main .guia .boss {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border: 5px solid #8890B3;
+  background-color: rgba(218, 15, 207, 0.199);
+  margin: 0px 20px 0px 45px;
+}
+.main .guia .boss-doble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #8890B3;
+  background-color: rgba(218, 15, 207, 0.199);
+  margin: 0px 20px 0px 45px;
+}
+.main .guia .boss-var {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 5px solid #8890B3;
+  background-color: rgba(218, 15, 207, 0.199);
+  margin: 0px 20px 0px 45px;
+}
+.main .guia .jefe-datos-var {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .guia .jefe-datos-var li {
+  margin: 20px 0px 20px 0px;
+  padding: 0px 20px 0px 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  list-style-type: none;
+}
+.main .guia .jefe-datos {
+  display: flex;
+  flex-direction: column;
+}
+.main .guia .jefe-datos li {
+  margin: 20px 0px 20px 0px;
+  padding: 0px 20px 0px 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  list-style-type: none;
+}
+.main .guia h2 {
+  padding: 20px;
+  font-size: xx-large;
+}
+.main .guia p {
+  margin: 10px;
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main .guia b {
+  color: #c5cf37;
+}
+.main .guia img {
+  margin: 20px;
+}
+.main .guia strong {
+  color: red;
+}
+.main .guia h4 {
+  font-size: x-large;
+  margin: 15px 0px 15px 0px;
+}
+.main .guia a {
+  color: white;
+  text-decoration: none;
+}
+.main .guia a :hover {
+  color: rgb(101, 138, 134);
+}
 .main .nav_aside {
-  height: 1100px;
   display: flex;
   margin: 5px 0px 0px 0px;
   flex-direction: column;
@@ -79,6 +149,7 @@ body {
   background-color: rgba(68, 122, 134, 0.63);
   border: 3px solid rgb(0, 0, 0);
   border-radius: 10px;
+  float: left;
 }
 .main .nav_aside nav .disc2 {
   margin-top: 20px;
@@ -111,5 +182,7 @@ body {
   background-color: rgba(68, 122, 134, 0.63);
   color: white;
   box-shadow: 1px -10px 19px 10px black;
-  height: 200px;
+}
+.footer p {
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */
