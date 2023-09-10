@@ -99,13 +99,13 @@
 
                 
             a{ 
-                color: white;
-                text-decoration: none;
+                color: rgb(101, 138, 134);
+                text-decoration: underline;
+                margin-bottom: 40px;
                 
-                :hover{
-                    color: rgb(101, 138, 134);
-
-                }
+           :hover{
+                    background-color: #c5cf37;
+           }
         }
 }
 

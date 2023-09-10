@@ -132,11 +132,12 @@ body {
   margin: 15px 0px 15px 0px;
 }
 .main .guia a {
-  color: white;
-  text-decoration: none;
+  color: rgb(101, 138, 134);
+  text-decoration: underline;
+  margin-bottom: 40px;
 }
 .main .guia a :hover {
-  color: rgb(101, 138, 134);
+  background-color: #c5cf37;
 }
 .main .nav_aside {
   display: flex;
