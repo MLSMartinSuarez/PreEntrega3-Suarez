@@ -68,25 +68,43 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  border: 5px solid #8890B3;
-  background-color: rgba(218, 15, 207, 0.199);
+  box-shadow: 2px -2px 12px 20px rgba(17, 192, 223, 0.199);
+  border-radius: 20px;
+  background-color: rgba(27, 197, 209, 0.116);
   margin: 0px 20px 0px 45px;
+}
+.main .guia .boss img {
+  box-shadow: 0px 0px 0px 0px;
+  border-radius: 0px;
+  border: 0px solid black;
 }
 .main .guia .boss-doble {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 5px solid #8890B3;
-  background-color: rgba(218, 15, 207, 0.199);
+  box-shadow: 2px -2px 12px 20px rgba(17, 192, 223, 0.199);
+  border-radius: 20px;
+  background-color: rgba(27, 197, 209, 0.116);
   margin: 0px 20px 0px 45px;
+}
+.main .guia .boss-doble img {
+  box-shadow: 0px 0px 0px 0px;
+  border-radius: 0px;
+  border: 0px solid black;
 }
 .main .guia .boss-var {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 5px solid #8890B3;
-  background-color: rgba(218, 15, 207, 0.199);
+  box-shadow: 2px -2px 12px 20px rgba(17, 192, 223, 0.199);
+  border-radius: 20px;
+  background-color: rgba(27, 197, 209, 0.116);
   margin: 0px 20px 0px 45px;
+}
+.main .guia .boss-var img {
+  box-shadow: 0px 0px 0px 0px;
+  border-radius: 0px;
+  border: 0px solid black;
 }
 .main .guia .jefe-datos-var {
   display: flex;
@@ -119,10 +137,14 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .main .guia b {
-  color: #c5cf37;
+  color: #37b1cf;
 }
 .main .guia img {
   margin: 20px;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 50px;
+  box-shadow: 0px -9px 17px 20px rgba(17, 192, 223, 0.37);
 }
 .main .guia strong {
   color: red;
@@ -130,6 +152,10 @@ body {
 .main .guia h4 {
   font-size: x-large;
   margin: 15px 0px 15px 0px;
+}
+.main .guia h5 {
+  color: red;
+  font-size: larger;
 }
 .main .guia a {
   color: rgb(101, 138, 134);
