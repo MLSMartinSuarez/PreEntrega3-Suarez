@@ -46,7 +46,8 @@ body {
   text-decoration: none;
 }
 .header div nav ul a :hover {
-  color: rgb(101, 138, 134);
+  color: rgb(72, 177, 166);
+  transition: all 0.4s;
 }
 
 .main {
@@ -146,6 +147,9 @@ body {
   border-radius: 50px;
   box-shadow: 0px -9px 17px 20px rgba(17, 192, 223, 0.37);
 }
+.main .guia img :hover {
+  transform: scale(1.5);
+}
 .main .guia strong {
   color: red;
 }
@@ -163,7 +167,7 @@ body {
   margin-bottom: 40px;
 }
 .main .guia a :hover {
-  background-color: #c5cf37;
+  color: rgb(138, 102, 101);
 }
 .main .nav_aside {
   display: flex;
@@ -200,7 +204,72 @@ body {
   text-decoration: none;
 }
 .main .nav_aside nav a :hover {
-  color: rgb(101, 138, 134);
+  color: rgb(72, 177, 166);
+  transition: all 0.4s;
+}
+
+.main_personajes {
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: -1px 5px 13px 4px;
+  background-image: url("/resources/images/corcho.jpg");
+  filter: brightness(50%);
+}
+.main_personajes .grilla_personajes {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  grid-template-rows: 400px 400px;
+  gap: 0px 0px;
+  grid-template-areas: "Squall Squall Zell Zell Selphie Selphie" "Irvine Irvine Rinoa Rinoa Quistis Quistis";
+  justify-items: center;
+  align-items: center;
+}
+.main_personajes .Squall {
+  grid-area: Squall;
+}
+.main_personajes .Zell {
+  grid-area: Zell;
+}
+.main_personajes .Selphie {
+  grid-area: Selphie;
+}
+.main_personajes .Irvine {
+  grid-area: Irvine;
+}
+.main_personajes .Rinoa {
+  grid-area: Rinoa;
+}
+.main_personajes .Quistis {
+  grid-area: Quistis;
+}
+.main_personajes img {
+  width: 180px;
+}
+.main_personajes .Squall {
+  transform: rotate(345deg);
+  box-shadow: -20px 13px 20px 4px;
+}
+.main_personajes .Zell {
+  transform: rotate(10deg);
+  box-shadow: 20px 13px 20px 4px;
+}
+.main_personajes .Selphie {
+  transform: rotate(355deg);
+  box-shadow: -20px 5px 20px 4px;
+}
+.main_personajes .Irvine {
+  transform: rotate(7deg);
+  box-shadow: -19px 20px 20px 4px;
+}
+.main_personajes .Rinoa {
+  transform: rotate(347deg);
+  box-shadow: -20px 8px 20px 4px;
+}
+.main_personajes .Quistis {
+  transform: rotate(14deg);
+  box-shadow: -16px 20px 20px 4px;
 }
 
 .footer {

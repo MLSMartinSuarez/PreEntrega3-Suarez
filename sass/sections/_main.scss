@@ -112,8 +112,12 @@
                 width: 500px;
                 border: 1px solid black;
                 border-radius: 50px;
-                box-shadow: 0px -9px 17px 20px  rgba(17, 192, 223, 0.37);
+                box-shadow: 0px -9px 17px 20px rgba(17, 192, 223, 0.37);
+                // transform: rotate(5deg);
 
+                :hover{
+                        transform: scale(1.5);
+                }
             }
 
             strong{
@@ -136,9 +140,9 @@
                 text-decoration: underline;
                 margin-bottom: 40px;
                 
-           :hover{
-                    background-color: #c5cf37;
-           }
+                :hover{
+                    color: rgb(138, 102, 101);
+                }
         }
 }
 
@@ -155,6 +159,7 @@
         border-radius: 10px;
         float: left;
         nav{
+
             .disc2{
                 margin-top: 20px;
             }
@@ -180,7 +185,8 @@
 
             
                 :hover{
-                    color: rgb(101, 138, 134);
+                    color: rgb(72, 177, 166);
+                    transition: all .4s;
                 }
         
             }
@@ -188,5 +194,69 @@
     }
 
 }   
+
+.main_personajes{
+    max-width: 1200px;
+    // height: 1000px;
+    margin: auto;
+    box-shadow: -1px 5px 13px 4px;
+    background-image: url('/resources/images/corcho.jpg');
+    filter: brightness(50%);
+    
+    .grilla_personajes {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 200px 200px 200px 200px 200px 200px; 
+        grid-template-rows: 400px 400px; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "Squall Squall Zell Zell Selphie Selphie"
+        "Irvine Irvine Rinoa Rinoa Quistis Quistis";
+        justify-items: center;
+        align-items: center;  
+    }
+        .Squall { grid-area: Squall; }
+        .Zell { grid-area: Zell; }
+        .Selphie { grid-area: Selphie; }
+        .Irvine { grid-area: Irvine; }
+        .Rinoa { grid-area: Rinoa; }
+        .Quistis { grid-area: Quistis; }
+
+      img{
+        width: 180px;
+      }
+
+      .Squall{
+        transform: rotate(345deg);
+        box-shadow: -20px 13px 20px 4px;
+      }
+
+      .Zell{
+        transform: rotate(10deg);
+        box-shadow: 20px 13px 20px 4px
+      }
+
+      .Selphie{
+        transform: rotate(355deg);
+        box-shadow: -20px 5px 20px 4px;
+      }
+
+      .Irvine{
+        transform: rotate(7deg);
+        box-shadow: -19px 20px 20px 4px;
+      }
+
+      .Rinoa{
+        transform: rotate(347deg);
+        box-shadow: -20px 8px 20px 4px;
+      }
+
+      .Quistis{
+        transform: rotate(14deg);
+        box-shadow: -16px 20px 20px 4px;
+      }
+    
+}
                 
  
