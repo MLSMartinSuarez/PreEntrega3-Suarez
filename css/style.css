@@ -222,7 +222,7 @@ body {
   max-width: 1200px;
   margin: auto;
   box-shadow: -1px 5px 13px 4px;
-  background-image: url("/resources/images/corcho2.webp");
+  background-image: url("./resources/images/corcho2.webp");
 }
 .main_personajes .grilla_personajes {
   display: grid;
