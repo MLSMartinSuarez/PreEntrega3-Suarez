@@ -1,5 +1,5 @@
 @import './assets/typography';
-@import "../node_modules/bootstrap/scss/bootstrap";
+
 @import './assets/extend';
 
 @import './assets/reset';
@@ -7,5 +7,5 @@
 @import './sections/main';
 @import './sections/footer';
 
-
+@import "../node_modules/bootstrap/scss/bootstrap";
 
