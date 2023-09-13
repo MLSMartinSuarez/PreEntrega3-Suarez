@@ -177,6 +177,7 @@ body {
 }
 .main .guia .siguiente-anterior {
   display: flex;
+  flex-wrap: wrap;
 }
 .main .guia .siguiente-anterior a {
   color: rgb(46, 167, 154);
