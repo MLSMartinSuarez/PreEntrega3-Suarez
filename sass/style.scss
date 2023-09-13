@@ -1,5 +1,11 @@
-// @import './assets/typography';
+@import './assets/typography';
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import './assets/extend';
+
 @import './assets/reset';
 @import './sections/header';
 @import './sections/main';
 @import './sections/footer';
+
+
+
