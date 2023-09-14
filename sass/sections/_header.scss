@@ -26,10 +26,12 @@ body{
             background-color: rgba(68, 122, 134, 0.63);
             font-family: $guia-titulo;
             
+            
 
             img{
                 width: 180px;
                 padding-right: 150px;
+                
             }
             ul{
                 display: flex;
@@ -39,12 +41,16 @@ body{
                 align-items: center;
                 flex-wrap: wrap;
                 padding-right: 50px;
+                
 
 
                 li{
                     font-weight: bolder;
                     list-style: none;
                     color: white;
+                    font-size: large;
+                    letter-spacing: 3px;
+                    
                    
                 }
                 a{

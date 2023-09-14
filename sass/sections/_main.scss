@@ -190,64 +190,276 @@
     max-width: 1200px;
     margin: auto;
     box-shadow: -1px 5px 13px 4px;
-    background-image: url('../resources/images/corcho2.webp');
+    background-image:  url('../resources/images/corcho22.webp');
+    border: 5px solid black;
     
-    .grilla_personajes {
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-auto-rows: 1fr; 
-        grid-template-columns: 200px 200px 200px 200px 200px 200px; 
-        grid-template-rows: 400px 400px; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-        "Squall Squall Zell Zell Selphie Selphie"
-        "Irvine Irvine Rinoa Rinoa Quistis Quistis";
-        justify-items: center;
-        align-items: center;  
-    
-        .Squall { grid-area: Squall; }
-        .Zell { grid-area: Zell; }
-        .Selphie { grid-area: Selphie; }
-        .Irvine { grid-area: Irvine; }
-        .Rinoa { grid-area: Rinoa; }
-        .Quistis { grid-area: Quistis; }
+    .grilla_personajes {  
+
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 200px 200px;
+        grid-template-rows: 400px 400px 300px 300px;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Squall Squall Zell Zell Selphie Selphie"
+          "Irvine Irvine Rinoa Rinoa Quistis Quistis"
+          "Laguna Laguna Kyros Kyros Ward Ward"
+          "Seifer Seifer Seifer Edea Edea Edea";
+          align-items: center;
+          justify-items: center;
+      
+      
+      .Squall { grid-area: Squall; }
+      
+      .Zell { grid-area: Zell; }
+      
+      .Selphie { grid-area: Selphie; }
+      
+      .Irvine { grid-area: Irvine; }
+      
+      .Rinoa { grid-area: Rinoa; }
+      
+      .Quistis { grid-area: Quistis; }
+      
+      .Laguna { grid-area: Laguna; }
+      
+      .Kyros { grid-area: Kyros; }
+      
+      .Ward { grid-area: Ward; }
+      
+      .Seifer { grid-area: Seifer; }
+      
+      .Edea { grid-area: Edea; }
+
+        img{
+            width: 180px;
+        }
         
-      img{
-        width: 180px;
-        }
-
-      .Squall{
-        transform: rotate(345deg);
-        box-shadow: -20px 13px 20px 4px;
-        }
-
-      .Zell{
-        transform: rotate(10deg);
-        box-shadow: 20px 13px 20px 4px
-      }
-
-      .Selphie{
-        transform: rotate(355deg);
-        box-shadow: -20px 5px 20px 4px;
-      }
-
-      .Irvine{
-        transform: rotate(7deg);
-        box-shadow: -19px 20px 20px 4px;
-      }
-
-      .Rinoa{
-        transform: rotate(347deg);
-        box-shadow: -20px 8px 20px 4px;
-      }
-
-      .Quistis{
-        transform: rotate(14deg);
-        box-shadow: -16px 20px 20px 4px;
+        .Squall{
+            transform: rotate(345deg);
+            box-shadow: -20px 13px 20px 4px;
         }
     
-    }  
+        .Zell{
+            transform: rotate(10deg);
+            box-shadow: 20px 13px 20px 4px;
+            margin-top: 100px;
+        }
+    
+        .Selphie{
+            transform: rotate(355deg);
+            box-shadow: -20px 5px 20px 4px;
+        }
+    
+        .Irvine{
+            transform: rotate(7deg);
+            box-shadow: -19px 20px 20px 4px;
+        }
+    
+        .Rinoa{
+            transform: rotate(347deg);
+            box-shadow: -20px 8px 20px 4px;
+            margin-top: 50px;
+        }
+    
+        .Quistis{
+            transform: rotate(14deg);
+            box-shadow: -16px 20px 20px 4px;
+        }
+
+        .Laguna{
+            transform: rotate(15deg);
+            box-shadow: 20px 13px 20px 4px;
+            margin-bottom: 50px;
+        }
+
+        .Kyros{
+            transform: rotate(5deg);
+            box-shadow: -20px 8px 20px 4px;
+            margin-top: 30px;
+        }
+
+        .Ward{
+            transform: rotate(340deg);
+            box-shadow: -20px 8px 20px 4px;
+        }
+
+        .Seifer{
+            transform: rotate(10deg);
+            box-shadow: 20px 13px 20px 4px;
+            margin-bottom: 50px;
+        }
+        
+
+        .Edea{
+            transform: rotate(355deg);
+            box-shadow: 20px 13px 20px 4px;
+        }
+    
+    } 
 
 }
+
+.main_FanArt{
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: -1px 5px 13px 4px;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+    .Fan-Art {  
+
+        display: grid;
+        grid-template-columns: 372px 150px 161px;
+        grid-template-rows: 319px 198px 457px 426px 498px 732px 481px;
+        // grid-auto-columns: 1fr;
+        // grid-auto-rows: 1fr;
+        // gap: 0px 0px;
+        // grid-auto-flow: row;
+        grid-template-areas:
+          "img1 Img2 Img2 img5"
+          "img1 img3 img4 img5"
+          "img6 img8 img8 img9"
+          "img7 img7 img10 img10"
+          "img11 img11 img12 img12"
+          "img13 img13 img15 img15"
+          "img16 img16 img17 img17";
+        //   border: 3px solid rgb(255, 255, 255);
+          overflow: hidden;
+
+          div{
+            overflow: hidden;
+            // border: 1px solid rgb(255, 255, 255);
+            border-radius: 50px;
+            padding: 20px;
+            // width: 100%;
+            // height: 100%;
+            // border: 6px solid rgb(0, 0, 0);
+
+        img{
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgb(255, 255, 255);
+            // box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+            border-radius: 10px;
+          }
+        }
+      
+      
+      .img1 { grid-area: img1; }
+      
+      .Img2 { grid-area: Img2; }
+      
+      .img3 { grid-area: img3; }
+      
+      .img4 { grid-area: img4; }
+      
+      .img5 { grid-area: img5; }
+      
+      .img6 { grid-area: img6; }
+      
+      .img7 { grid-area: img7; }
+      
+      .img8 { grid-area: img8; }
+      
+      .img9 { grid-area: img9; }
+      
+      .img10 { grid-area: img10; }
+      
+      .img11 { grid-area: img11; }
+      
+      .img12 { grid-area: img12; }
+      
+      .img13 { grid-area: img13; }
+      
+    //   .img14 { grid-area: img14; }
+      
+      .img15 { grid-area: img15; }
+      
+      .img16 { grid-area: img16; }
+      
+      .img17 { grid-area: img17; }
+      
+      .img18 { grid-area: img18; }
+
+        .laguna-solo{
+           
+            box-shadow: 0px 0px 20px 2px rgb(255, 255, 255);
+        }  
+        .rinoa-sola{
+            box-shadow: 0px 0px 20px 11px #1B62B0;
+        }  
+        .squall-solo{
+            
+            box-shadow: 0px 0px 20px 2px rgb(173, 53, 53);
+        } 
+        .seifer-solo{
+            box-shadow: 0px 0px 10px 2px rgb(21, 250, 0);
+            
+        }  
+        .todos2{
+            
+            box-shadow: 0px 0px 20px 3px rgb(240, 129, 3);
+            
+            
+        }   
+        .edea-sola{
+            
+            box-shadow: 0px 0px 20px 5px #daaf7c;
+        }
+        .todos3{
+            box-shadow: 0px 0px 20px 3px rgb(255, 255, 255);
+            
+        }
+        .laguna-kyros-ward{
+            box-shadow: 0px 0px 20px 3px #ffffff;
+            
+        }
+        .selphie-sola{
+            box-shadow: 0px 0px 20px 11px #661543
+            
+        }
+        .seifer-viento-trueno{
+            box-shadow: 0px 0px 20px 3px rgb(255, 255, 255);
+            
+        }
+        .quistis-sola{
+            box-shadow: 0px 0px 20px 11px #846ab6;
+            
+        }
+        .todos4{
+            box-shadow: 0px 0px 20px 4px #368D91;
+            
+        }
+        .ff8-chicas{
+            box-shadow: 0px 0px 20px 11px rgb(255, 255, 255);
+            
+        }
+        // .irvine-solo{
+        //     width: 100%;
+           
+        // }
+        .seeds{
+            box-shadow: 0px 0px 20px 11px rgb(183, 0, 255);
+            
+        }
+        .todos5{
+            box-shadow: 0px 0px 20px 11px rgb(253, 104, 4);
+            
+        }
+        .zell-solo{
+            box-shadow: 0px 0px 20px 11px rgb(255, 255, 255);
+            
+        }
+        // .edea-sola2{
+        //     width: 100%;
+            
+        // }
+   } 
+} 
+ 
                 
  
