@@ -150,8 +150,10 @@
         background-color: rgba(68, 122, 134, 0.63);
         border: 3px solid rgb(0, 0, 0);
         border-radius: 10px;
-        float: left;
+        float: right;
         font-family: $guia-titulo;
+        width: 200px;
+        
         nav{
 
             .disc2{
@@ -171,6 +173,13 @@
             h3{
                 margin-bottom: 8px;
                 font-size: x-large;
+                display: block;
+                font-size: 1.17em;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            font-weight: bold;
 
             }
 
