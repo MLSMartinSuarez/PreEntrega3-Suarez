@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
-.luz, .nav_aside nav a :hover, .main .guia .siguiente-anterior a :hover {
+.luz, .footer nav ul a :hover, .nav_aside nav a :hover, .main .guia .siguiente-anterior a :hover {
   color: rgb(72, 177, 166);
   transition: all 0.4s;
 }
@@ -62,7 +62,7 @@ body {
   box-shadow: 0px 3px 14px 4px;
   max-width: 1200px;
   margin: auto;
-  background-color: rgba(68, 122, 134, 0.63);
+  background-color: rgba(10, 10, 10, 0.466);
   font-family: "Karla", sans-serif;
 }
 .header div nav img {
@@ -158,6 +158,7 @@ body {
   padding: 20px;
   font-family: "Karla", sans-serif;
   letter-spacing: 1px;
+  text-align: center;
 }
 .main .guia b {
   color: #6de2ff;
@@ -179,6 +180,11 @@ body {
   color: red;
   font-size: larger;
 }
+.main .guia a {
+  color: rgb(46, 167, 154);
+  margin-bottom: 40px;
+  text-decoration: none;
+}
 .main .guia .siguiente-anterior {
   display: flex;
   flex-wrap: wrap;
@@ -188,6 +194,34 @@ body {
   margin-bottom: 40px;
   text-decoration: none;
 }
+.main_contacto {
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: -1px 5px 13px 4px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.37);
+  font-family: "Merriweather", serif;
+  color: rgb(255, 255, 255);
+}
+.main_contacto h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 32px 0px 6px 0px;
+}
+.main_contacto h4 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 0px 0px 64px 0px;
+}
+.main_contacto section .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 0px 60px 0px;
+  height: 481px;
+  justify-content: space-between;
+}
+
 .nav_aside {
   display: flex;
   margin: 5px 0px 0px 0px;
@@ -196,7 +230,7 @@ body {
   align-items: flex-end;
   padding: 20px;
   color: rgb(255, 255, 255);
-  background-color: rgba(68, 122, 134, 0.63);
+  background-color: rgba(10, 10, 10, 0.322);
   border: 3px solid rgb(0, 0, 0);
   border-radius: 10px;
   float: right;
@@ -455,7 +489,11 @@ body {
   box-shadow: 0px 0px 20px 11px rgb(255, 255, 255);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  .main .guia p {
+    text-align: center;
+    font-size: large;
+  }
   .header div nav {
     padding-bottom: 10px;
   }
@@ -476,8 +514,20 @@ body {
   .main_personajes .grilla_personajes {
     grid-template-columns: 90px 153px 69px 200px 141px 96px;
   }
+  .main_FanArt .Fan-Art {
+    grid-template-columns: 204px 162px 167px;
+    grid-template-rows: 280px 203px 435px 339px 460px 465px 355px;
+    align-items: center;
+    justify-items: center;
+  }
+  .footer p {
+    text-align: center;
+  }
+  .footer .fa-brands {
+    margin-left: 363px !important;
+  }
 }
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .main {
     box-shadow: none;
     background-color: rgba(0, 0, 0, 0);
@@ -485,19 +535,46 @@ body {
   .main .guia {
     align-items: stretch;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main .guia p {
-    margin-left: 30px;
-    margin-right: 60px;
+    font-size: x-large;
+    width: 650px;
+    text-align: center;
   }
   .main .guia img {
     margin: 0px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 79px;
+  }
+  .main .guia iframe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .guia h5 {
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align: center;
+    padding-bottom: 20px;
   }
   .main .guia .siguiente-anterior {
-    justify-content: space-evenly;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+    width: 327px;
+  }
+  .main .guia .siguiente-anterior p {
+    height: 100px;
+    margin-bottom: 0px;
+  }
+  .main_contacto {
+    box-shadow: 0px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 740px;
   }
   .header div nav {
     flex-direction: column;
@@ -506,7 +583,9 @@ body {
   }
   .header div nav img {
     padding: 0px;
-    width: 300px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header div nav ul {
     justify-content: space-evenly;
@@ -522,6 +601,9 @@ body {
   .footer p {
     text-align: center;
   }
+  .footer .fa-brands {
+    margin-left: 363px;
+  }
   .main_personajes {
     max-width: 900px;
     width: 740px;
@@ -529,15 +611,45 @@ body {
   .main_personajes .grilla_personajes {
     grid-template-columns: 71px 181px 74px 148px 205px 71px;
   }
+  .main_FanArt {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px;
+  }
+  .main_FanArt .Fan-Art {
+    grid-template-columns: 183px 161px 191px;
+    grid-template-rows: 342px 286px 414px 408px 322px 533px 236px;
+    align-items: center;
+    justify-items: center;
+    width: 743px;
+  }
 }
 .footer {
   max-width: 1200px;
   margin: auto;
-  background-color: rgba(68, 122, 134, 0.63);
+  background-color: rgba(10, 10, 10, 0.63);
   color: white;
   box-shadow: 1px -10px 19px 10px black;
   font-family: "Merriweather", serif;
 }
+.footer .fa-brands {
+  margin-left: 585px;
+  box-shadow: -1px 0px 20px 10px;
+  background-color: #03ffff;
+}
 .footer p {
-  padding: 20px;
+  padding: 29px 0px 12px 25px;
+  color: rgb(46, 167, 154);
+}
+.footer nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-top: 15px;
+}
+.footer nav ul li {
+  list-style: none;
+}
+.footer nav ul a {
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

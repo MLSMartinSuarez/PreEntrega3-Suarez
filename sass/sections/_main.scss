@@ -88,6 +88,7 @@
                 padding: 20px;
                 font-family: $guia-titulo;
                 letter-spacing: 1px;
+                text-align: center;
                 }
 
             b{
@@ -97,14 +98,8 @@
             img{ 
                 margin: 20px;
                 width: 500px;
-                // border: 1px solid black;
                 border-radius: 10px;
                 box-shadow: 0px -9px 17px 20px rgba(17, 192, 223, 0.37);
-                // transform: rotate(5deg);
-
-                // :hover{
-                //         transform: scale(1.5);
-                // }
             }
 
             strong{
@@ -119,6 +114,12 @@
             h5{
                 color: red;
                 font-size: larger;
+            }
+
+            a{
+                color: rgb(46, 167, 154);
+                margin-bottom: 40px;
+                text-decoration: none;
             }
 
              
@@ -137,6 +138,43 @@
             }   
         }
     }
+    
+    
+}
+
+.main_contacto{
+        max-width: 1200px;
+        margin: auto;
+        box-shadow: -1px 5px 13px 4px rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.37);
+        font-family: $guia;
+        color: rgb(255, 255, 255);
+        
+
+    h2{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 32px 0px 6px 0px;
+        
+    } 
+    
+    h4{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 0px 0px 64px 0px;
+    }
+    section{
+
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0px 0px 60px 0px;
+            height: 481px;
+            justify-content: space-between;
+        }
+    }
 }
 
     .nav_aside{
@@ -147,7 +185,7 @@
         align-items: flex-end;
         padding: 20px;
         color: rgb(255, 255, 255);
-        background-color: rgba(68, 122, 134, 0.63);
+        background-color: rgba(10, 10, 10, 0.322);
         border: 3px solid rgb(0, 0, 0);
         border-radius: 10px;
         float: right;
@@ -317,10 +355,6 @@
         display: grid;
         grid-template-columns: 372px 150px 161px;
         grid-template-rows: 319px 198px 457px 426px 498px 732px 481px;
-        // grid-auto-columns: 1fr;
-        // grid-auto-rows: 1fr;
-        // gap: 0px 0px;
-        // grid-auto-flow: row;
         grid-template-areas:
           "img1 Img2 Img2 img5"
           "img1 img3 img4 img5"
@@ -329,23 +363,17 @@
           "img11 img11 img12 img12"
           "img13 img13 img15 img15"
           "img16 img16 img17 img17";
-        //   border: 3px solid rgb(255, 255, 255);
           overflow: hidden;
 
           div{
             overflow: hidden;
-            // border: 1px solid rgb(255, 255, 255);
             border-radius: 50px;
             padding: 20px;
-            // width: 100%;
-            // height: 100%;
-            // border: 6px solid rgb(0, 0, 0);
 
         img{
             width: 100%;
             height: 100%;
             border: 1px solid rgb(255, 255, 255);
-            // box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
             border-radius: 10px;
           }
         }
@@ -377,7 +405,6 @@
       
       .img13 { grid-area: img13; }
       
-    //   .img14 { grid-area: img14; }
       
       .img15 { grid-area: img15; }
       
@@ -440,10 +467,7 @@
             box-shadow: 0px 0px 20px 11px rgb(255, 255, 255);
             
         }
-        // .irvine-solo{
-        //     width: 100%;
-           
-        // }
+        
         .seeds{
             box-shadow: 0px 0px 20px 11px rgb(183, 0, 255);
             
@@ -456,14 +480,23 @@
             box-shadow: 0px 0px 20px 11px rgb(255, 255, 255);
             
         }
-        // .edea-sola2{
-        //     width: 100%;
-            
-        // }
+        
    } 
 } 
 
-@media (max-width:768px){
+@media (max-width:800px){
+
+    .main{
+
+        .guia{
+
+            p{
+                text-align: center;
+                font-size: large;
+                
+            }
+        }
+    }
 
     .header{
 
@@ -496,9 +529,32 @@
         grid-template-columns: 90px 153px 69px 200px 141px 96px;
         }
     }
-}
 
-@media (max-width:425px){
+    .main_FanArt{
+        
+        .Fan-Art{
+        grid-template-columns: 204px 162px 167px;
+        grid-template-rows: 280px 203px 435px 339px 460px 465px 355px;
+        align-items: center;
+        justify-items: center;
+    
+        }
+    }
+    
+    .footer{
+
+
+        p{
+            text-align: center;
+    }
+    .fa-brands{
+        margin-left: 363px!important;
+    }
+}
+    
+}   
+
+@media (max-width:500px){
 
     .main{
         box-shadow: none;
@@ -507,20 +563,57 @@
         .guia{
             align-items: stretch;
             text-align: center;
+            margin-left: auto;
+            margin-right: auto;
             p{
-                margin-left: 30px;
-                margin-right: 60px;
+                font-size: x-large;
+                width: 650px;
+                text-align: center;
+                
         }
         img{
-          margin: 0px;
+            margin: 0px;
             display: block;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 79px;
         } 
-        .siguiente-anterior{
-            justify-content: space-evenly;
+
+        iframe{
+            margin-left: auto;
+            margin-right: auto;
         }
+
+        h5{
+            margin-right: 100px;
+            margin-left: 100px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+
+        .siguiente-anterior{
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: nowrap;
+            width: 327px;
+        p{
+            height: 100px;
+            margin-bottom: 0px;
+            
+            
+            
+        }
+    }
     }   
+}
+
+.main_contacto{
+    box-shadow: 0px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 740px;
+    
 }
 
     .header{
@@ -534,7 +627,9 @@
                 background-color: rgba(0, 0, 0, 0);
             img{
                 padding: 0px;
-                width: 300px;
+                width: 400px;
+                margin-left: auto;
+                margin-right: auto;
             
             }
 
@@ -558,6 +653,9 @@
             p{
                 text-align: center;
         }
+        .fa-brands{
+            margin-left: 363px;
+        }
     }
 
         .main_personajes{
@@ -565,6 +663,19 @@
             width: 740px;
         .grilla_personajes{
             grid-template-columns: 71px 181px 74px 148px 205px 71px;
+        }
+    }
+    
+    .main_FanArt{
+            background-color: rgba(0, 0, 0, 0);
+            box-shadow: 0px 0px 0px 0px;
+        .Fan-Art{
+            grid-template-columns: 183px 161px 191px;
+            grid-template-rows: 342px 286px 414px 408px 322px 533px 236px;
+            align-items: center;
+            justify-items: center;
+            width: 743px;
+    
         }
     }
 }
