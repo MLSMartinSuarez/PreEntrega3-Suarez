@@ -5,6 +5,12 @@
   transition: all 0.4s;
 }
 
+.polaroid, .main_personajes .grilla_personajes .Edea :hover, .main_personajes .grilla_personajes .Seifer :hover, .main_personajes .grilla_personajes .Ward :hover, .main_personajes .grilla_personajes .Kyros :hover, .main_personajes .grilla_personajes .Laguna :hover, .main_personajes .grilla_personajes .Quistis :hover, .main_personajes .grilla_personajes .Rinoa :hover, .main_personajes .grilla_personajes .Irvine :hover, .main_personajes .grilla_personajes .Selphie :hover, .main_personajes .grilla_personajes .Zell :hover, .main_personajes .grilla_personajes .Squall :hover {
+  box-shadow: -20px 13px 20px 4px rgb(0, 0, 0);
+  transform: scale(1.1);
+  filter: brightness(100%);
+}
+
 .datosjefe, .main .guia .boss {
   display: flex;
   flex-direction: row-reverse;
@@ -190,7 +196,7 @@ body {
   flex-wrap: wrap;
 }
 .main .guia .siguiente-anterior a {
-  color: rgb(46, 167, 154);
+  color: rgb(255, 255, 255);
   margin-bottom: 40px;
   text-decoration: none;
 }
@@ -262,17 +268,13 @@ body {
   max-width: 1200px;
   margin: auto;
   box-shadow: -1px 5px 13px 4px;
-  background-image: url("../resources/images/corcho22.webp");
-  border: 5px solid black;
+  background-image: url("../resources/images/corcho2.webp");
+  border: 5px solid rgba(0, 0, 0, 0.404);
 }
 .main_personajes .grilla_personajes {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px 200px;
-  grid-template-rows: 400px 400px 300px 300px;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
+  grid-template-columns: 227px 200px 200px 200px 200px 200px;
+  grid-template-rows: 323px 400px 300px 366px;
   grid-template-areas: "Squall Squall Zell Zell Selphie Selphie" "Irvine Irvine Rinoa Rinoa Quistis Quistis" "Laguna Laguna Kyros Kyros Ward Ward" "Seifer Seifer Seifer Edea Edea Edea";
   align-items: center;
   justify-items: center;
@@ -312,57 +314,69 @@ body {
 }
 .main_personajes .grilla_personajes img {
   width: 180px;
+  transition: all 0.2s;
+  filter: brightness(60%);
 }
 .main_personajes .grilla_personajes .Squall {
   transform: rotate(345deg);
   box-shadow: -20px 13px 20px 4px;
+  background-color: rgb(0, 0, 0);
 }
 .main_personajes .grilla_personajes .Zell {
   transform: rotate(10deg);
   box-shadow: 20px 13px 20px 4px;
   margin-top: 100px;
+  background-color: black;
 }
 .main_personajes .grilla_personajes .Selphie {
   transform: rotate(355deg);
   box-shadow: -20px 5px 20px 4px;
+  background-color: black;
 }
 .main_personajes .grilla_personajes .Irvine {
   transform: rotate(7deg);
   box-shadow: -19px 20px 20px 4px;
+  background-color: black;
 }
 .main_personajes .grilla_personajes .Rinoa {
   transform: rotate(347deg);
   box-shadow: -20px 8px 20px 4px;
   margin-top: 50px;
+  background-color: black;
 }
 .main_personajes .grilla_personajes .Quistis {
   transform: rotate(14deg);
   box-shadow: -16px 20px 20px 4px;
+  background-color: black;
 }
 .main_personajes .grilla_personajes .Laguna {
   transform: rotate(15deg);
   box-shadow: 20px 13px 20px 4px;
   margin-bottom: 50px;
+  background-color: black;
 }
 .main_personajes .grilla_personajes .Kyros {
   transform: rotate(5deg);
   box-shadow: -20px 8px 20px 4px;
   margin-top: 30px;
+  background-color: black;
 }
 .main_personajes .grilla_personajes .Ward {
   transform: rotate(340deg);
   box-shadow: -20px 8px 20px 4px;
+  background-color: black;
 }
 .main_personajes .grilla_personajes .Seifer {
   transform: rotate(10deg);
   box-shadow: 20px 13px 20px 4px;
   margin-bottom: 50px;
+  background-color: black;
 }
 .main_personajes .grilla_personajes .Edea {
   transform: rotate(355deg);
   box-shadow: 20px 13px 20px 4px;
+  background-color: black;
 }
-
 .main_FanArt {
   max-width: 1200px;
   margin: auto;

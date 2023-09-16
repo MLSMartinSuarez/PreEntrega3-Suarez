@@ -3,6 +3,12 @@
     transition: all .4s;
 }
 
+.polaroid{
+    box-shadow: -20px 13px 20px 4px rgb(0, 0, 0); 
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
 .datosjefe{
     display: flex;
     flex-direction: row-reverse;
