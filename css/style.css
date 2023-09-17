@@ -49,7 +49,7 @@
 }
 
 body {
-  background-image: url("../resources/images/balambwallpaper.png");
+  background-image: url("../resources/images/balambwallpaper.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -375,7 +375,7 @@ body {
 }
 .main_personajes .grilla_personajes .Squall {
   transform: rotate(345deg);
-  box-shadow: -20px 13px 20px 4px;
+  box-shadow: 20px 13px 20px 4px;
   background-color: rgb(0, 0, 0);
 }
 .main_personajes .grilla_personajes .Zell {
@@ -386,23 +386,23 @@ body {
 }
 .main_personajes .grilla_personajes .Selphie {
   transform: rotate(355deg);
-  box-shadow: -20px 5px 20px 4px;
+  box-shadow: 20px 13px 20px 4px;
   background-color: black;
 }
 .main_personajes .grilla_personajes .Irvine {
   transform: rotate(7deg);
-  box-shadow: -19px 20px 20px 4px;
+  box-shadow: 20px 13px 20px 4px;
   background-color: black;
 }
 .main_personajes .grilla_personajes .Rinoa {
   transform: rotate(347deg);
-  box-shadow: -20px 8px 20px 4px;
+  box-shadow: 20px 13px 20px 4px;
   margin-top: 50px;
   background-color: black;
 }
 .main_personajes .grilla_personajes .Quistis {
   transform: rotate(14deg);
-  box-shadow: -16px 20px 20px 4px;
+  box-shadow: 20px 13px 20px 4px;
   background-color: black;
 }
 .main_personajes .grilla_personajes .Laguna {
@@ -413,13 +413,13 @@ body {
 }
 .main_personajes .grilla_personajes .Kyros {
   transform: rotate(5deg);
-  box-shadow: -20px 8px 20px 4px;
+  box-shadow: 20px 13px 20px 4px;
   margin-top: 30px;
   background-color: black;
 }
 .main_personajes .grilla_personajes .Ward {
   transform: rotate(340deg);
-  box-shadow: -20px 8px 20px 4px;
+  box-shadow: 20px 13px 20px 4px;
   background-color: black;
 }
 .main_personajes .grilla_personajes .Seifer {
