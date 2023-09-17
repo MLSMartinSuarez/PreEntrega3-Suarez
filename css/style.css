@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
-.luz, .footer nav ul a :hover, .nav_aside nav a :hover, .main .guia .siguiente-anterior a :hover {
+.luz, .footer nav ul a :hover, .nav_aside nav a :hover, .main .guia .siguiente-anterior :hover {
   color: rgb(72, 177, 166);
   transition: all 0.4s;
 }
@@ -183,8 +183,13 @@ body {
   margin: 15px 0px 15px 0px;
 }
 .main .guia h5 {
-  color: red;
+  color: rgb(255, 238, 0);
   font-size: larger;
+  padding: 10px;
+  width: 400px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.199);
+  border-radius: 40px;
 }
 .main .guia a {
   color: rgb(46, 167, 154);
@@ -193,13 +198,51 @@ body {
 }
 .main .guia .siguiente-anterior {
   display: flex;
+  width: 600px;
   flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.main .guia .siguiente-anterior .fa-forward {
+  position: relative;
+  top: 2px;
+  left: 10px;
+  height: 25px;
+}
+.main .guia .siguiente-anterior .fa-backward {
+  position: relative;
+  top: 2px;
+  left: -99px;
+  height: 25px;
 }
 .main .guia .siguiente-anterior a {
   color: rgb(255, 255, 255);
   margin-bottom: 40px;
   text-decoration: none;
 }
+.main .contenido_responsive {
+  display: none;
+}
+.main .contenido_responsive nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.219);
+  padding: 10px;
+}
+.main .contenido_responsive nav h3 {
+  padding: 2px;
+  margin-bottom: 10px;
+}
+.main .contenido_responsive nav ul {
+  padding-bottom: 70px;
+}
+.main .contenido_responsive nav ul li {
+  list-style: none;
+  padding: 5px;
+  color: rgb(46, 167, 154);
+}
+
 .main_contacto {
   max-width: 1200px;
   margin: auto;
@@ -509,16 +552,19 @@ body {
   background-color: rgba(10, 10, 10, 0.63);
   color: white;
   box-shadow: 1px -10px 19px 10px black;
-  font-family: "Merriweather", serif;
+  font-family: "Karla", sans-serif;
 }
 .footer .fa-brands {
   margin-left: 585px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   box-shadow: -1px 0px 20px 10px;
   background-color: #03ffff;
 }
 .footer p {
   padding: 29px 0px 12px 25px;
-  color: rgb(46, 167, 154);
+  color: rgb(43, 187, 172);
+  background-color: rgba(0, 0, 0, 0.281);
 }
 .footer nav ul {
   display: flex;
@@ -527,7 +573,11 @@ body {
   padding-top: 15px;
 }
 .footer nav ul li {
+  font-weight: bolder;
   list-style: none;
+  color: white;
+  font-size: large;
+  letter-spacing: 3px;
 }
 .footer nav ul a {
   color: white;
@@ -537,6 +587,13 @@ body {
   .main .guia p {
     text-align: center;
     font-size: large;
+  }
+  .main .guia .contenido_responsive {
+    width: auto;
+    display: block;
+  }
+  .main .guia .contenido_responsive h2 {
+    text-align: center;
   }
   .header div nav {
     padding-bottom: 10px;
@@ -586,7 +643,6 @@ body {
   }
   .main .guia p {
     font-size: x-large;
-    width: 650px;
     text-align: center;
   }
   .main .guia img {
@@ -605,6 +661,7 @@ body {
     margin-left: 100px;
     text-align: center;
     padding-bottom: 20px;
+    width: auto;
   }
   .main .guia .siguiente-anterior {
     width: 100px;
@@ -616,6 +673,10 @@ body {
   .main .guia .siguiente-anterior p {
     height: 100px;
     margin-bottom: 0px;
+  }
+  .main .contenido_responsive {
+    width: auto;
+    display: block;
   }
   .main_contacto {
     box-shadow: 0px 0px 0px 0px;
@@ -663,7 +724,7 @@ body {
   }
   .main_FanArt .Fan-Art {
     grid-template-columns: 183px 161px 191px;
-    grid-template-rows: 342px 286px 414px 408px 322px 533px 236px;
+    grid-template-rows: 342px 286px 414px 408px 322px 533px 306px;
     align-items: center;
     justify-items: center;
     width: 743px;

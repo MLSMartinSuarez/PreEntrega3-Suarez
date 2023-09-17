@@ -9,6 +9,14 @@
                 font-size: large;
                 
             }
+            .contenido_responsive{
+                width: auto;
+                display: block;
+
+                h2{
+                    text-align: center;
+                }
+            }
         }
     }
 
@@ -36,6 +44,7 @@
     .nav_aside{
         display: none;
     } 
+
     .main_personajes{
         max-width: 900px;
         width: 752px;
@@ -74,6 +83,8 @@
         box-shadow: none;
         background-color: rgba(0, 0, 0, 0);
 
+        
+
         .guia{
             align-items: stretch;
             text-align: center;
@@ -84,7 +95,6 @@
             
             p{
                 font-size: x-large;
-                width: 650px;
                 text-align: center;
                 
         }
@@ -106,6 +116,7 @@
             margin-left: 100px;
             text-align: center;
             padding-bottom: 20px;
+            width: auto;
         }
 
 
@@ -124,8 +135,12 @@
             }
         }
     }   
+        .contenido_responsive{
+            width: auto;
+            display: block;
+    }
 }
-
+       
 .main_contacto{
     box-shadow: 0px 0px 0px 0px;
     background-color: rgba(0, 0, 0, 0);
@@ -188,7 +203,7 @@
             box-shadow: 0px 0px 0px 0px;
         .Fan-Art{
             grid-template-columns: 183px 161px 191px;
-            grid-template-rows: 342px 286px 414px 408px 322px 533px 236px;
+            grid-template-rows: 342px 286px 414px 408px 322px 533px 306px;
             align-items: center;
             justify-items: center;
             width: 743px;

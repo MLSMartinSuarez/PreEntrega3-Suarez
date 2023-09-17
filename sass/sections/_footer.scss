@@ -4,17 +4,21 @@
     background-color: rgba(10, 10, 10, 0.63);
     color: white;
     box-shadow: 1px -10px 19px 10px black;
-    font-family: $guia;
+    font-family: $guia-titulo;
 
     .fa-brands{
         margin-left: 585px;
+        margin-top: 40px;
+        margin-bottom: 20px;
         box-shadow: -1px 0px 20px 10px;
         background-color: #03ffff;
     }
 
     p{
         padding: 29px 0px 12px 25px;
-        color: rgb(46, 167, 154);
+        color: rgb(43, 187, 172);
+        background-color: rgba(0, 0, 0, 0.281);
+      
     }
         
     nav{
@@ -25,7 +29,11 @@
             flex-direction: row;
             padding-top: 15px;
             li{
+                font-weight: bolder;
                 list-style: none;
+                color: white;
+                font-size: large;
+                letter-spacing: 3px;
             }
 
             a{
