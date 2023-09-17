@@ -59,6 +59,22 @@ body {
   background-color: rgba(0, 0, 0, 0.911);
 }
 
+@keyframes Aparecer {
+  0% {
+    filter: brightness(25%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
+.header div img {
+  width: 390px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  animation: Aparecer 3s;
+  padding-top: 20px;
+}
 .header div nav {
   display: flex;
   flex-direction: row;
@@ -70,10 +86,6 @@ body {
   margin: auto;
   background-color: rgba(10, 10, 10, 0.466);
   font-family: "Karla", sans-serif;
-}
-.header div nav img {
-  width: 180px;
-  padding-right: 150px;
 }
 .header div nav ul {
   display: flex;
@@ -90,6 +102,7 @@ body {
   color: white;
   font-size: large;
   letter-spacing: 3px;
+  padding: 10px;
 }
 .header div nav ul a {
   color: white;
@@ -434,17 +447,20 @@ body {
   grid-template-rows: 319px 198px 457px 426px 498px 732px 481px;
   grid-template-areas: "img1 Img2 Img2 img5" "img1 img3 img4 img5" "img6 img8 img8 img9" "img7 img7 img10 img10" "img11 img11 img12 img12" "img13 img13 img15 img15" "img16 img16 img17 img17";
   overflow: hidden;
+  padding: 20px;
+}
+.main_FanArt .Fan-Art :hover {
+  filter: brightness(100%);
 }
 .main_FanArt .Fan-Art div {
   overflow: hidden;
-  border-radius: 50px;
   padding: 20px;
 }
 .main_FanArt .Fan-Art div img {
   width: 100%;
   height: 100%;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 10px;
+  transition: all 0.2s;
+  filter: brightness(60%);
 }
 .main_FanArt .Fan-Art .img1 {
   grid-area: img1;
@@ -498,52 +514,58 @@ body {
   grid-area: img18;
 }
 .main_FanArt .Fan-Art .laguna-solo {
-  box-shadow: 0px 0px 20px 2px rgb(255, 255, 255);
+  box-shadow: 0px 0px 11px 5px rgb(255, 255, 255);
 }
 .main_FanArt .Fan-Art .rinoa-sola {
-  box-shadow: 0px 0px 20px 11px #1B62B0;
+  box-shadow: 0px 0px 11px 5px #1B62B0;
 }
 .main_FanArt .Fan-Art .squall-solo {
-  box-shadow: 0px 0px 20px 2px rgb(173, 53, 53);
+  box-shadow: 0px 0px 11px 5px rgb(173, 53, 53);
 }
 .main_FanArt .Fan-Art .seifer-solo {
-  box-shadow: 0px 0px 10px 2px rgb(21, 250, 0);
+  box-shadow: 0px 0px 11px 5px rgb(21, 250, 0);
 }
 .main_FanArt .Fan-Art .todos2 {
-  box-shadow: 0px 0px 20px 3px rgb(240, 129, 3);
+  box-shadow: 0px 0px 11px 5px rgb(240, 129, 3);
 }
 .main_FanArt .Fan-Art .edea-sola {
-  box-shadow: 0px 0px 20px 5px #daaf7c;
+  box-shadow: 0px 0px 11px 5px #daaf7c;
+  border: 2px solid #daaf7c;
 }
 .main_FanArt .Fan-Art .todos3 {
-  box-shadow: 0px 0px 20px 3px rgb(255, 255, 255);
+  box-shadow: 0px 0px 11px 5px rgb(255, 255, 255);
 }
 .main_FanArt .Fan-Art .laguna-kyros-ward {
-  box-shadow: 0px 0px 20px 3px #ffffff;
+  box-shadow: 0px 0px 11px 5px #ffffff;
 }
 .main_FanArt .Fan-Art .selphie-sola {
-  box-shadow: 0px 0px 20px 11px #661543;
+  box-shadow: 0px 0px 11px 5px #661543;
+  border: 2px solid #661543;
 }
 .main_FanArt .Fan-Art .seifer-viento-trueno {
-  box-shadow: 0px 0px 20px 3px rgb(255, 255, 255);
+  box-shadow: 0px 0px 11px 5px rgb(255, 255, 255);
 }
 .main_FanArt .Fan-Art .quistis-sola {
-  box-shadow: 0px 0px 20px 11px #846ab6;
+  box-shadow: 0px 0px 11px 5px #846ab6;
+  border: 2px solid #846ab6;
 }
 .main_FanArt .Fan-Art .todos4 {
-  box-shadow: 0px 0px 20px 4px #368D91;
+  box-shadow: 0px 0px 11px 5px #368D91;
+  border: 2px solid #368D91;
 }
 .main_FanArt .Fan-Art .ff8-chicas {
-  box-shadow: 0px 0px 20px 11px rgb(255, 255, 255);
+  box-shadow: 0px 0px 11px 5px rgb(255, 255, 255);
 }
 .main_FanArt .Fan-Art .seeds {
-  box-shadow: 0px 0px 20px 11px rgb(183, 0, 255);
+  box-shadow: 0px 0px 11px 5px rgb(183, 0, 255);
+  border: 2px solid rgb(183, 0, 255);
 }
 .main_FanArt .Fan-Art .todos5 {
-  box-shadow: 0px 0px 20px 11px rgb(253, 104, 4);
+  box-shadow: 0px 0px 11px 5px rgb(253, 104, 4);
+  border: 2px solid rgb(253, 104, 4);
 }
 .main_FanArt .Fan-Art .zell-solo {
-  box-shadow: 0px 0px 20px 11px rgb(255, 255, 255);
+  box-shadow: 0px 0px 11px 5px rgb(255, 255, 255);
 }
 
 .footer {
@@ -598,9 +620,6 @@ body {
   .header div nav {
     padding-bottom: 10px;
   }
-  .header div nav img {
-    padding: 0px;
-  }
   .header div nav ul {
     justify-content: space-evenly;
     padding: 0px;
@@ -615,11 +634,17 @@ body {
   .main_personajes .grilla_personajes {
     grid-template-columns: 90px 153px 69px 200px 141px 96px;
   }
+  .main_personajes .grilla_personajes div img {
+    filter: brightness(100%);
+  }
   .main_FanArt .Fan-Art {
     grid-template-columns: 204px 162px 167px;
     grid-template-rows: 280px 203px 435px 339px 460px 465px 355px;
     align-items: center;
     justify-items: center;
+  }
+  .main_FanArt .Fan-Art div img {
+    filter: brightness(100%);
   }
   .footer p {
     text-align: center;
@@ -683,16 +708,14 @@ body {
     background-color: rgba(0, 0, 0, 0);
     width: 740px;
   }
+  .header div img {
+    padding-left: 188px;
+    width: 400px;
+  }
   .header div nav {
     flex-direction: column;
     box-shadow: 0px 0px 0px 0px;
     background-color: rgba(0, 0, 0, 0);
-  }
-  .header div nav img {
-    padding: 0px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .header div nav ul {
     justify-content: space-evenly;
@@ -728,5 +751,6 @@ body {
     align-items: center;
     justify-items: center;
     width: 743px;
+    padding: 0px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -12,7 +12,25 @@ body{
 
 .header{ 
 
-    div{
+    @keyframes Aparecer {
+        0%{
+            filter: brightness(25%);
+        }
+        100%{
+            filter: brightness(100%);
+        }
+    }
+
+    div{        
+        
+        img{
+            width: 390px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            animation: Aparecer 3s;
+            padding-top: 20px;
+        }
 
         nav{
             display: flex;
@@ -26,13 +44,6 @@ body{
             background-color: rgba(10, 10, 10, 0.466);
             font-family: $guia-titulo;
             
-            
-
-            img{
-                width: 180px;
-                padding-right: 150px;
-                
-            }
             ul{
                 display: flex;
                 width: 700px;
@@ -50,6 +61,7 @@ body{
                     color: white;
                     font-size: large;
                     letter-spacing: 3px;
+                    padding: 10px;
                     
                    
                 }

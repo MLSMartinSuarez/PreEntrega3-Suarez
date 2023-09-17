@@ -460,17 +460,21 @@
           "img13 img13 img15 img15"
           "img16 img16 img17 img17";
           overflow: hidden;
+          padding: 20px;
+
+          :hover{
+            filter: brightness(100%);
+        }
 
           div{
             overflow: hidden;
-            border-radius: 50px;
             padding: 20px;
 
         img{
             width: 100%;
             height: 100%;
-            border: 1px solid rgb(255, 255, 255);
-            border-radius: 10px;
+            transition: all .2s;
+            filter: brightness(60%);
           }
         }
       
@@ -512,68 +516,74 @@
 
         .laguna-solo{
            
-            box-shadow: 0px 0px 20px 2px rgb(255, 255, 255);
+            box-shadow: 0px 0px 11px 5px rgb(255, 255, 255);
         }  
         .rinoa-sola{
-            box-shadow: 0px 0px 20px 11px #1B62B0;
+            box-shadow: 0px 0px 11px 5px #1B62B0;
         }  
         .squall-solo{
             
-            box-shadow: 0px 0px 20px 2px rgb(173, 53, 53);
+            box-shadow: 0px 0px 11px 5px rgb(173, 53, 53);
         } 
         .seifer-solo{
-            box-shadow: 0px 0px 10px 2px rgb(21, 250, 0);
+            box-shadow: 0px 0px 11px 5px rgb(21, 250, 0);
             
         }  
         .todos2{
             
-            box-shadow: 0px 0px 20px 3px rgb(240, 129, 3);
+            box-shadow: 0px 0px 11px 5px rgb(240, 129, 3);
             
             
         }   
         .edea-sola{
             
-            box-shadow: 0px 0px 20px 5px #daaf7c;
+            box-shadow: 0px 0px 11px 5px #daaf7c;
+            border: 2px solid #daaf7c;
         }
         .todos3{
-            box-shadow: 0px 0px 20px 3px rgb(255, 255, 255);
+            box-shadow: 0px 0px 11px 5px rgb(255, 255, 255);
             
         }
         .laguna-kyros-ward{
-            box-shadow: 0px 0px 20px 3px #ffffff;
+            box-shadow: 0px 0px 11px 5px #ffffff;
             
         }
         .selphie-sola{
-            box-shadow: 0px 0px 20px 11px #661543
+            box-shadow: 0px 0px 11px 5px #661543;
+            border: 2px solid #661543;
             
         }
         .seifer-viento-trueno{
-            box-shadow: 0px 0px 20px 3px rgb(255, 255, 255);
+            box-shadow: 0px 0px 11px 5px rgb(255, 255, 255);
             
         }
         .quistis-sola{
-            box-shadow: 0px 0px 20px 11px #846ab6;
+            box-shadow: 0px 0px 11px 5px #846ab6;
+            border: 2px solid #846ab6;
+            
             
         }
         .todos4{
-            box-shadow: 0px 0px 20px 4px #368D91;
-            
+            box-shadow: 0px 0px 11px 5px #368D91;
+            border: 2px solid #368D91;
         }
         .ff8-chicas{
-            box-shadow: 0px 0px 20px 11px rgb(255, 255, 255);
+            box-shadow: 0px 0px 11px 5px rgb(255, 255, 255);
             
         }
         
         .seeds{
-            box-shadow: 0px 0px 20px 11px rgb(183, 0, 255);
+            box-shadow: 0px 0px 11px 5px rgb(183, 0, 255);
+            border: 2px solid rgb(183, 0, 255);
             
         }
         .todos5{
-            box-shadow: 0px 0px 20px 11px rgb(253, 104, 4);
+            box-shadow: 0px 0px 11px 5px rgb(253, 104, 4);
+            border: 2px solid rgb(253, 104, 4);
             
         }
         .zell-solo{
-            box-shadow: 0px 0px 20px 11px rgb(255, 255, 255);
+            box-shadow: 0px 0px 11px 5px rgb(255, 255, 255);
             
         }
         

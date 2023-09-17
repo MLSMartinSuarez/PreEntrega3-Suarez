@@ -27,10 +27,6 @@
             
             nav{
                 padding-bottom: 10px;
-            img{
-                padding: 0px;
-            
-            }
 
             ul{
                 justify-content: space-evenly;
@@ -48,10 +44,18 @@
     .main_personajes{
         max-width: 900px;
         width: 752px;
-    .grilla_personajes{
+
+        .grilla_personajes{
         grid-template-columns: 90px 153px 69px 200px 141px 96px;
+
+            div{
+
+                img{
+                    filter: brightness(100%);
+            }
         }
     }
+}
 
     .main_FanArt{
         
@@ -61,6 +65,13 @@
         align-items: center;
         justify-items: center;
     
+            
+        div{
+
+                img{
+                    filter: brightness(100%);
+                }
+            }
         }
     }
     
@@ -152,18 +163,18 @@
 
 
         div{
+
+            img{
+                padding-left: 188px;
+                width: 400px;
             
+            }
+
             nav{
                 flex-direction: column;
                 box-shadow: 0px 0px 0px 0px;
                 background-color: rgba(0, 0, 0, 0);
-            img{
-                padding: 0px;
-                width: 400px;
-                margin-left: auto;
-                margin-right: auto;
             
-            }
 
             ul{
                 justify-content: space-evenly;
@@ -190,9 +201,10 @@
         }
     }
 
-        .main_personajes{
+    .main_personajes{
             max-width: 900px;
             width: 740px;
+
         .grilla_personajes{
             grid-template-columns: 71px 181px 74px 148px 205px 71px;
         }
@@ -207,6 +219,7 @@
             align-items: center;
             justify-items: center;
             width: 743px;
+            padding: 0px;
     
         }
     }
