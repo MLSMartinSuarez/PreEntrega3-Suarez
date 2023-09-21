@@ -287,44 +287,35 @@
     
     .grilla_personajes {  
 
-        display: grid;
-        grid-template-columns: 227px 200px 200px 200px 200px 200px;
-        grid-template-rows: 323px 400px 300px 366px;
-        grid-template-areas:
-          "Squall Squall Zell Zell Selphie Selphie"
-          "Irvine Irvine Rinoa Rinoa Quistis Quistis"
-          "Laguna Laguna Kyros Kyros Ward Ward"
-          "Seifer Seifer Seifer Edea Edea Edea";
-          align-items: center;
-          justify-items: center;
-      
-      
-      .Squall { grid-area: Squall; }
-      
-      .Zell { grid-area: Zell; }
-      
-      .Selphie { grid-area: Selphie; }
-      
-      .Irvine { grid-area: Irvine; }
-      
-      .Rinoa { grid-area: Rinoa; }
-      
-      .Quistis { grid-area: Quistis; }
-      
-      .Laguna { grid-area: Laguna; }
-      
-      .Kyros { grid-area: Kyros; }
-      
-      .Ward { grid-area: Ward; }
-      
-      .Seifer { grid-area: Seifer; }
-      
-      .Edea { grid-area: Edea; }
+        display: grid; 
+        grid-template-columns: 299px 382px 279px;
+        grid-template-rows: 347px 347px 347px 348px; 
+        grid-template-areas: 
+    "Squall Zell Selphie"
+    "Irvine Rinoa Quistis"
+    "Laguna Kyros Ward"
+    "Seifer Edea Edea"; 
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+.Squall { grid-area: Squall; }
+.Zell { grid-area: Zell; }
+.Selphie { grid-area: Selphie; }
+.Irvine { grid-area: Irvine; }
+.Rinoa { grid-area: Rinoa; }
+.Quistis { grid-area: Quistis; }
+.Laguna { grid-area: Laguna; }
+.Kyros { grid-area: Kyros; }
+.Ward { grid-area: Ward; }
+.Seifer { grid-area: Seifer; }
+.Edea { grid-area: Edea; }
 
         img{
             width: 180px;
             transition: all .2s;
             filter: brightness(60%);
+           
         }
     
         .Squall{
@@ -436,21 +427,19 @@
     
     } 
 
-}
+
 
 .main_FanArt{
     max-width: 1200px;
     margin: auto;
     box-shadow: -1px 5px 13px 4px;
     background-color: rgba(0, 0, 0, 0.425);
-    padding-top: 20px;
-    padding-bottom: 30px;
-    
+
     .Fan-Art {  
 
         display: grid;
-        grid-template-columns: 372px 150px 161px;
-        grid-template-rows: 319px 198px 457px 426px 498px 732px 481px;
+        grid-template-columns: 364px 178px 197px 460px;
+        grid-template-rows:  389px 270px 477px 556px 617px 789px 442px;
         grid-template-areas:
           "img1 Img2 Img2 img5"
           "img1 img3 img4 img5"
@@ -460,7 +449,10 @@
           "img13 img13 img15 img15"
           "img16 img16 img17 img17";
           overflow: hidden;
-          padding: 20px;
+          justify-content: center;
+            align-items: center;
+            justify-items: center;
+          
 
           :hover{
             filter: brightness(100%);

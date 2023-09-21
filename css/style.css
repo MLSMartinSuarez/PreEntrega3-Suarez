@@ -5,7 +5,7 @@
   transition: all 0.4s;
 }
 
-.polaroid, .main_personajes .grilla_personajes .Edea :hover, .main_personajes .grilla_personajes .Seifer :hover, .main_personajes .grilla_personajes .Ward :hover, .main_personajes .grilla_personajes .Kyros :hover, .main_personajes .grilla_personajes .Laguna :hover, .main_personajes .grilla_personajes .Quistis :hover, .main_personajes .grilla_personajes .Rinoa :hover, .main_personajes .grilla_personajes .Irvine :hover, .main_personajes .grilla_personajes .Selphie :hover, .main_personajes .grilla_personajes .Zell :hover, .main_personajes .grilla_personajes .Squall :hover {
+.polaroid, .main_personajes .Edea :hover, .main_personajes .Seifer :hover, .main_personajes .Ward :hover, .main_personajes .Kyros :hover, .main_personajes .Laguna :hover, .main_personajes .Quistis :hover, .main_personajes .Rinoa :hover, .main_personajes .Irvine :hover, .main_personajes .Selphie :hover, .main_personajes .Zell :hover, .main_personajes .Squall :hover {
   box-shadow: -20px 13px 20px 4px rgb(0, 0, 0);
   transform: scale(1.1);
   filter: brightness(100%);
@@ -329,106 +329,107 @@ body {
 }
 .main_personajes .grilla_personajes {
   display: grid;
-  grid-template-columns: 227px 200px 200px 200px 200px 200px;
-  grid-template-rows: 323px 400px 300px 366px;
-  grid-template-areas: "Squall Squall Zell Zell Selphie Selphie" "Irvine Irvine Rinoa Rinoa Quistis Quistis" "Laguna Laguna Kyros Kyros Ward Ward" "Seifer Seifer Seifer Edea Edea Edea";
-  align-items: center;
+  grid-template-columns: 299px 382px 279px;
+  grid-template-rows: 347px 347px 347px 348px;
+  grid-template-areas: "Squall Zell Selphie" "Irvine Rinoa Quistis" "Laguna Kyros Ward" "Seifer Edea Edea";
   justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
-.main_personajes .grilla_personajes .Squall {
+.main_personajes .Squall {
   grid-area: Squall;
 }
-.main_personajes .grilla_personajes .Zell {
+.main_personajes .Zell {
   grid-area: Zell;
 }
-.main_personajes .grilla_personajes .Selphie {
+.main_personajes .Selphie {
   grid-area: Selphie;
 }
-.main_personajes .grilla_personajes .Irvine {
+.main_personajes .Irvine {
   grid-area: Irvine;
 }
-.main_personajes .grilla_personajes .Rinoa {
+.main_personajes .Rinoa {
   grid-area: Rinoa;
 }
-.main_personajes .grilla_personajes .Quistis {
+.main_personajes .Quistis {
   grid-area: Quistis;
 }
-.main_personajes .grilla_personajes .Laguna {
+.main_personajes .Laguna {
   grid-area: Laguna;
 }
-.main_personajes .grilla_personajes .Kyros {
+.main_personajes .Kyros {
   grid-area: Kyros;
 }
-.main_personajes .grilla_personajes .Ward {
+.main_personajes .Ward {
   grid-area: Ward;
 }
-.main_personajes .grilla_personajes .Seifer {
+.main_personajes .Seifer {
   grid-area: Seifer;
 }
-.main_personajes .grilla_personajes .Edea {
+.main_personajes .Edea {
   grid-area: Edea;
 }
-.main_personajes .grilla_personajes img {
+.main_personajes img {
   width: 180px;
   transition: all 0.2s;
   filter: brightness(60%);
 }
-.main_personajes .grilla_personajes .Squall {
+.main_personajes .Squall {
   transform: rotate(345deg);
   box-shadow: 20px 13px 20px 4px;
   background-color: rgb(0, 0, 0);
 }
-.main_personajes .grilla_personajes .Zell {
+.main_personajes .Zell {
   transform: rotate(10deg);
   box-shadow: 20px 13px 20px 4px;
   margin-top: 100px;
   background-color: black;
 }
-.main_personajes .grilla_personajes .Selphie {
+.main_personajes .Selphie {
   transform: rotate(355deg);
   box-shadow: 20px 13px 20px 4px;
   background-color: black;
 }
-.main_personajes .grilla_personajes .Irvine {
+.main_personajes .Irvine {
   transform: rotate(7deg);
   box-shadow: 20px 13px 20px 4px;
   background-color: black;
 }
-.main_personajes .grilla_personajes .Rinoa {
+.main_personajes .Rinoa {
   transform: rotate(347deg);
   box-shadow: 20px 13px 20px 4px;
   margin-top: 50px;
   background-color: black;
 }
-.main_personajes .grilla_personajes .Quistis {
+.main_personajes .Quistis {
   transform: rotate(14deg);
   box-shadow: 20px 13px 20px 4px;
   background-color: black;
 }
-.main_personajes .grilla_personajes .Laguna {
+.main_personajes .Laguna {
   transform: rotate(15deg);
   box-shadow: 20px 13px 20px 4px;
   margin-bottom: 50px;
   background-color: black;
 }
-.main_personajes .grilla_personajes .Kyros {
+.main_personajes .Kyros {
   transform: rotate(5deg);
   box-shadow: 20px 13px 20px 4px;
   margin-top: 30px;
   background-color: black;
 }
-.main_personajes .grilla_personajes .Ward {
+.main_personajes .Ward {
   transform: rotate(340deg);
   box-shadow: 20px 13px 20px 4px;
   background-color: black;
 }
-.main_personajes .grilla_personajes .Seifer {
+.main_personajes .Seifer {
   transform: rotate(10deg);
   box-shadow: 20px 13px 20px 4px;
   margin-bottom: 50px;
   background-color: black;
 }
-.main_personajes .grilla_personajes .Edea {
+.main_personajes .Edea {
   transform: rotate(355deg);
   box-shadow: 20px 13px 20px 4px;
   background-color: black;
@@ -438,16 +439,16 @@ body {
   margin: auto;
   box-shadow: -1px 5px 13px 4px;
   background-color: rgba(0, 0, 0, 0.425);
-  padding-top: 20px;
-  padding-bottom: 30px;
 }
 .main_FanArt .Fan-Art {
   display: grid;
-  grid-template-columns: 372px 150px 161px;
-  grid-template-rows: 319px 198px 457px 426px 498px 732px 481px;
+  grid-template-columns: 364px 178px 197px 460px;
+  grid-template-rows: 389px 270px 477px 556px 617px 789px 442px;
   grid-template-areas: "img1 Img2 Img2 img5" "img1 img3 img4 img5" "img6 img8 img8 img9" "img7 img7 img10 img10" "img11 img11 img12 img12" "img13 img13 img15 img15" "img16 img16 img17 img17";
   overflow: hidden;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 .main_FanArt .Fan-Art :hover {
   filter: brightness(100%);
@@ -605,7 +606,7 @@ body {
   color: white;
   text-decoration: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 858px) {
   .main .guia p {
     text-align: center;
     font-size: large;
@@ -627,19 +628,16 @@ body {
   .nav_aside {
     display: none;
   }
-  .main_personajes {
-    max-width: 900px;
-    width: 752px;
-  }
   .main_personajes .grilla_personajes {
-    grid-template-columns: 90px 153px 69px 200px 141px 96px;
+    grid-template-columns: 345px auto 346px;
   }
   .main_personajes .grilla_personajes div img {
     filter: brightness(100%);
+    width: 150px;
   }
   .main_FanArt .Fan-Art {
-    grid-template-columns: 204px 162px 167px;
-    grid-template-rows: 280px 203px 435px 339px 460px 465px 355px;
+    grid-template-columns: 220px 220px 150px 220px;
+    grid-template-rows: 427px 209px 572px 350px 601px 553px 411px;
     align-items: center;
     justify-items: center;
   }
@@ -653,7 +651,7 @@ body {
     margin-left: 363px !important;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 760px) {
   .main {
     box-shadow: none;
     background-color: rgba(0, 0, 0, 0);
@@ -709,8 +707,7 @@ body {
     width: 740px;
   }
   .header div img {
-    padding-left: 188px;
-    width: 400px;
+    width: 746px;
   }
   .header div nav {
     flex-direction: column;
@@ -735,18 +732,17 @@ body {
     margin-left: 363px;
   }
   .main_personajes {
-    max-width: 900px;
     width: 740px;
   }
   .main_personajes .grilla_personajes {
-    grid-template-columns: 71px 181px 74px 148px 205px 71px;
+    grid-template-columns: 271px auto 272px;
   }
   .main_FanArt {
     background-color: rgba(0, 0, 0, 0);
     box-shadow: 0px 0px 0px 0px;
   }
   .main_FanArt .Fan-Art {
-    grid-template-columns: 183px 161px 191px;
+    grid-template-columns: 183px 161px 191px 200px;
     grid-template-rows: 342px 286px 414px 408px 322px 533px 306px;
     align-items: center;
     justify-items: center;

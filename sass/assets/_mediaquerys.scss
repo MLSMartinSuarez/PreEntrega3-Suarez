@@ -1,4 +1,4 @@
-@media (max-width:800px){
+@media (max-width:858px){
 
     .main{
 
@@ -42,16 +42,15 @@
     } 
 
     .main_personajes{
-        max-width: 900px;
-        width: 752px;
 
         .grilla_personajes{
-        grid-template-columns: 90px 153px 69px 200px 141px 96px;
+            grid-template-columns: 345px auto 346px;
 
             div{
 
                 img{
                     filter: brightness(100%);
+                    width: 150px;
             }
         }
     }
@@ -60,8 +59,8 @@
     .main_FanArt{
         
         .Fan-Art{
-        grid-template-columns: 204px 162px 167px;
-        grid-template-rows: 280px 203px 435px 339px 460px 465px 355px;
+            grid-template-columns: 220px 220px 150px 220px;
+            grid-template-rows: 427px 209px 572px 350px 601px 553px 411px;
         align-items: center;
         justify-items: center;
     
@@ -70,6 +69,7 @@
 
                 img{
                     filter: brightness(100%);
+                   
                 }
             }
         }
@@ -88,7 +88,7 @@
     
 }   
 
-@media (max-width:500px){
+@media (max-width:760px){
 
     .main{
         box-shadow: none;
@@ -165,8 +165,7 @@
         div{
 
             img{
-                padding-left: 188px;
-                width: 400px;
+               width: 746px;
             
             }
 
@@ -202,11 +201,10 @@
     }
 
     .main_personajes{
-            max-width: 900px;
             width: 740px;
 
         .grilla_personajes{
-            grid-template-columns: 71px 181px 74px 148px 205px 71px;
+            grid-template-columns: 271px auto 272px;
         }
     }
     
@@ -214,7 +212,7 @@
             background-color: rgba(0, 0, 0, 0);
             box-shadow: 0px 0px 0px 0px;
         .Fan-Art{
-            grid-template-columns: 183px 161px 191px;
+            grid-template-columns: 183px 161px 191px 200px;
             grid-template-rows: 342px 286px 414px 408px 322px 533px 306px;
             align-items: center;
             justify-items: center;
